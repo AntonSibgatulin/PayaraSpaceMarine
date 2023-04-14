@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="my.compary.psixol">
+
+    <class name="SpaceMarine" table="spacemarine">
+        <meta attribute="class-description">
+            This class contains the user detail.
+        </meta>
+
+
+        <id name="id" type="java.lang.Long" column="id">
+            <generator class="native"></generator>
+        </id>
+
+
+
+        <property name="name" column="name" type="java.lang.String"/>
+        <property name="creationDate" column="creationDate" type="string"/>
+        <property name="health" column="health" type="java.lang.Double"/>
+        <property name="creatinoDateUnix" column="creationDateUnix" type="long"/>
+        <property name="category" column="category" type="string"/>
+        <property name="weaponType" column="weaponType" type="string"/>
+        <property name="meleeWeapon" column="meleeWeapon" type="string"/>
+        <property name="starshipId" column="starshipId" type="long"/>
+
+    </class>
+</hibernate-mapping>
